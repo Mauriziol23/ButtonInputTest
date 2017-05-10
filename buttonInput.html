@@ -1,0 +1,71 @@
+<html>
+
+
+    <title> Javascript</title>
+
+    <header>
+
+
+
+    </header>
+
+
+
+<body>
+
+<p id="TEXTS"> Hello World!! </p>
+
+<button id="MyButton"> Change Text</button>
+
+
+<p id="secondParagraph">Javascript is .... </p>
+	<button id="SecondButton"> Append Text</button>
+<p id="emptyparagraph"> </p>
+	<button id="createparagraph"> create text </button>
+<p id="moreText"> <b> Font Size will Change </b> </p>
+	<button id="styleText"> Stye Text </button>
+
+
+  <script type="text/javascript">
+
+  /*Document looks for the ID from the p^ in the id and changes the content to what is in the document
+
+  document.getElementById("text").innerHTML = "Hello Mau!";
+*/
+
+  document.getElementById("MyButton").onclick = function() {
+
+      document.getElementById("TEXTS").innerHTML ="Hello Mau!";
+  }
+
+   document.getElementById("SecondButton").onclick = function() {
+      
+	  document.getElementById("secondParagraph").innerHTML = "I think " + document.getElementById("secondParagraph").innerHTML + "AWESOME!";
+
+}
+
+
+document.getElementById("createparagraph").onclick = function() {
+	
+	document.getElementById("emptyparagraph").innerHTML = "<h1>Hola amigo</h1>";
+	
+	}
+	
+ document.getElementById("styleText").onclick = function() {
+	document.getElementById("moreText").style.fontSize = "50px";
+	
+	
+	/* This first one chnages the color of the text to red
+	 document.getElementById("moreText").style.color = "red" +  
+	 This second one clears it 	document.getElementById("moreText").style.display= "none"; */
+	}
+  
+  </script>
+
+</body>
+
+
+
+
+
+</html>
